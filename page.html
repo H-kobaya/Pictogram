@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="style.css"/>
+<title>Pictogram Galery</title>
+
+<script type="text/javascript">
+function Home(){
+  const panel = document.getElementById('panel');
+
+  panel.style.animation ="Next 1s ease 0s normal forwards";
+  setTimeout(function(){location.href="index.html";}, 1100);
+}
+function A(){
+  panel.style.animation ="Next 1s ease 0s normal forwards";
+  setTimeout(function(){location.href="page.html";}, 1100);
+}
+function B(){
+  panel.style.animation ="Next 1s ease 0s normal forwards";
+  setTimeout(function(){location.href="page1.html";}, 1100);
+}
+</script>
+</head>
+
+<body>
+
+<div class="grid-container page">
+  <div class="titulo A">
+<h1> #A </h1>
+  </div>
+  <div class="botonera">
+    <ul>
+      <a onclick="Home()"><li>Home</li></a>
+      <a onclick="A()"><li>#A</li></a>
+      <a onclick="B()"><li>#B</li></a>
+    </ul>
+  </div>
+
+  <div id="panel"></div>
+  <div id="space"></div>
+  <div class="galeria">
+    <div>
+      <img id="img1" src="https://picsum.photos/150?random=1"/>
+      <img id="img1" src="https://picsum.photos/150?random=2"/>
+      <img id="img1" src="https://picsum.photos/150?random=3"/>
+      <img id="img1" src="https://picsum.photos/150?random=4"/>
+      <img id="img1" src="https://picsum.photos/150?random=5"/>
+      <img id="img1" src="https://picsum.photos/150?random=6"/>
+      <img id="img1" src="https://picsum.photos/150?random=7"/>
+      <img id="img1" src="https://picsum.photos/150?random=8"/>
+      <img id="img1" src="https://picsum.photos/150?random=9"/>
+    </div>
+  </div>
+</div>
+</body>
+</html>

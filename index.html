@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Pictogram Galery</title>
+
+    <script type="text/javascript">
+    function Home(){
+      const panel = document.getElementById('panel');
+
+      panel.style.animation ="Next 1s ease 0s normal forwards";
+      setTimeout(function(){location.href="index.html";}, 1100);
+    }
+    function A(){
+      panel.style.animation ="Next 1s ease 0s normal forwards";
+      setTimeout(function(){location.href="page.html";}, 1100);
+    }
+    function B(){
+      panel.style.animation ="Next 1s ease 0s normal forwards";
+      setTimeout(function(){location.href="page1.html";}, 1100);
+    }
+    </script>
+
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="titulo">
+        <h1>PICTOGRAM</h1>
+        <p>Hover left for menu</p>
+      </div>
+      <div class="botonera">
+        <ul>
+          <a onclick="Home()"><li>Home</li></a>
+          <a onclick="A()"><li>#A</li></a>
+          <a onclick="B()"><li>#B</li></a>
+        </ul>
+      </div>
+
+<div id="panel"></div>
+
+    </div>
+  </body>
+
+</html>
